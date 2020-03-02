@@ -2,6 +2,7 @@ package com.br.reconhecimentogeograficobackend.controller;
 
 import com.br.reconhecimentogeograficobackend.model.Categoria;
 import com.br.reconhecimentogeograficobackend.repository.CategoriaRepository;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +13,7 @@ import javax.websocket.server.PathParam;
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("categoria")
+@Api(value = "Categoria")
 public class CategoriaController {
     private final CategoriaRepository dao;
 

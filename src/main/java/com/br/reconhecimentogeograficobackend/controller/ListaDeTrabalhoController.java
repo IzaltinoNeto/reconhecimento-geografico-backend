@@ -3,6 +3,7 @@ package com.br.reconhecimentogeograficobackend.controller;
 import com.br.reconhecimentogeograficobackend.controller.dto.ListaDeTrabalhoDTO;
 import com.br.reconhecimentogeograficobackend.model.ListaDeTrabalho;
 import com.br.reconhecimentogeograficobackend.repository.ListaDeTrabalhoRepository;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
@@ -14,6 +15,7 @@ import javax.websocket.server.PathParam;
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("lista-de-trabalho")
+@Api(value = "Lista de Trabalho")
 public class ListaDeTrabalhoController {
     private final ListaDeTrabalhoRepository dao;
 

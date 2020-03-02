@@ -6,6 +6,7 @@ import com.br.reconhecimentogeograficobackend.controller.dto.ListaDeTrabalhoDTO;
 import com.br.reconhecimentogeograficobackend.model.ItemLista;
 import com.br.reconhecimentogeograficobackend.model.ListaDeTrabalho;
 import com.br.reconhecimentogeograficobackend.repository.ItemListaRepository;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
@@ -19,6 +20,7 @@ import java.util.stream.Collectors;
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("item-lista")
+@Api(value = "ItemLista")
 public class ItemListaController {
     private final ItemListaRepository dao;
 

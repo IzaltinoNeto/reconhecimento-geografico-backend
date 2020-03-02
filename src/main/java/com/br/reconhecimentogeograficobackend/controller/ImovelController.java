@@ -4,6 +4,7 @@ import com.br.reconhecimentogeograficobackend.controller.dto.ImovelDTO;
 import com.br.reconhecimentogeograficobackend.model.Imovel;
 import com.br.reconhecimentogeograficobackend.model.Territorio;
 import com.br.reconhecimentogeograficobackend.repository.ImovelRepository;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -17,6 +18,7 @@ import java.util.ArrayList;
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("imovel")
+@Api(value = "Imovel")
 public class ImovelController {
     private final ImovelRepository dao;
 
